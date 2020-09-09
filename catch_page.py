@@ -12,6 +12,8 @@ import time, datetime
 #运行：python I:\work\project\python\catch_mm\catch_page.py
 project_folder = "I://work//project//python//catch_mm//"  # 图片保存目录
 images_folder = project_folder+"images//"  # 图片保存目录
+if os.path.exists(images_folder) == False:
+    os.mkdir(images_folder)
 
 headers = {
     "Referer":"http://image.baidu.com/search/index?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word=%E8%8C%83%E5%86%B0%E5%86%B0",
